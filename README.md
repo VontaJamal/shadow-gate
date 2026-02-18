@@ -1,6 +1,6 @@
-# ⚔️ Shadow Gate — Solo Leveling Quest Engine for Agent Monarchs
+# ⚔️ Shadowgate — Solo Leveling Quest Engine for Agent Monarchs
 
-A gamified productivity and accountability system inspired by Solo Leveling, built for agentic orchestration mastery. Shadow Gate delivers daily quests, tracks XP, enforces punishments, and forces public output — because becoming an expert happens in the public eye or not at all.
+A gamified productivity and accountability system inspired by Solo Leveling, built for agentic orchestration mastery. Shadowgate delivers daily quests, tracks XP, enforces punishments, and forces public output — because becoming an expert happens in the public eye or not at all.
 
 ## 🎯 What It Does
 
@@ -14,7 +14,7 @@ A gamified productivity and accountability system inspired by Solo Leveling, bui
 
 ## 🏗️ Architecture
 
-### Shadow Gate (Quest Delivery)
+### Shadowgate (Quest Delivery)
 - Runs as an isolated cron job (6 AM ET daily)
 - Reads `leveling.json` for player state, project status, and rules
 - Generates quests based on priority rotation, neglect tracking, and randomization
@@ -148,9 +148,9 @@ These are the core of the system. Random quests about agentic orchestration — 
 
 ### All Quests Are Public
 
-Every quest is `[PUBLIC]` because every quest is based on work you already did. Shadow Gate scans your git history, finds the impressive stuff you shipped, and the quest is: **tell the world about it.**
+Every quest is `[PUBLIC]` because every quest is based on work you already did. Shadowgate scans your git history, finds the impressive stuff you shipped, and the quest is: **tell the world about it.**
 
-You already did the hard part. Shadow Gate just tells you to stop being humble about it.
+You already did the hard part. Shadowgate just tells you to stop being humble about it.
 
 This means there's no "extra work" for public output — the code is shipped, the features are built. The quest is just the visibility layer on top of reality.
 
@@ -183,7 +183,7 @@ Quests tagged `[PUBLIC]` are **NOT marked complete** until a link or proof of th
 | Streak | Consecutive weeks shipped |
 
 ### Escalation
-- **Thursday+** with no weekly output → Shadow Gate issues URGENT warnings
+- **Thursday+** with no weekly output → Shadowgate issues URGENT warnings
 - **Sunday 11 PM** missed → **Gate of Steins** punishment activates
 
 ---
@@ -240,16 +240,16 @@ XP: 0/100 | Streak: 0 days
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Failure to complete will result in punishment.
-Shadow Gate does not negotiate.
+Shadowgate does not negotiate.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ```
 
 ### Voice & Tone
-Shadow Gate speaks in **third person, mechanically**:
+Shadowgate speaks in **third person, mechanically**:
 - "3 quests have been issued."
 - "Failure to complete will result in punishment."
 - "WARNING: NexusCrypto neglect threshold approaching. Mandatory quest will be issued."
-- "Shadow Gate does not negotiate."
+- "Shadowgate does not negotiate."
 - "Quest completion requires proof."
 
 No warmth. No "you got this." No emojis beyond ⚔️🔔⚠️. Pure mechanical authority.
@@ -262,7 +262,7 @@ No warmth. No "you got this." No emojis beyond ⚔️🔔⚠️. Pure mechanical
 
 ```json
 {
-  "system": "Shadow Gate — The Monarch System",
+  "system": "Shadowgate — The Monarch System",
   "version": 1,
   "player": {
     "name": "string",
@@ -365,7 +365,7 @@ No warmth. No "you got this." No emojis beyond ⚔️🔔⚠️. Pure mechanical
 
 ---
 
-## 📊 Shadow Gate Dashboard (Planned)
+## 📊 Shadowgate Dashboard (Planned)
 
 A visual dashboard to track progression over time. This is a real build requirement, not a nice-to-have.
 
@@ -396,13 +396,13 @@ A visual dashboard to track progression over time. This is a real build requirem
 
 > "I alone level up."
 
-Shadow Gate exists because talent without visibility is wasted. You can be the best agent orchestrator in the world, but if nobody knows, it doesn't matter.
+Shadowgate exists because talent without visibility is wasted. You can be the best agent orchestrator in the world, but if nobody knows, it doesn't matter.
 
 Every quest pushes toward two things:
 1. **Building real things** — shipping code, products, systems
 2. **Building in public** — sharing what you learn, so the world sees your expertise grow
 
-Shadow Gate doesn't care about your feelings. It cares about your output.
+Shadowgate doesn't care about your feelings. It cares about your output.
 
 ---
 
@@ -414,3 +414,4 @@ MIT — Build your own System. Level up in public.
 
 *Inspired by Solo Leveling (나 혼자만 레벨업) by Chugong*
 *Built for the Agent Monarch, Indra Uchiha* 🏰
+
