@@ -1,8 +1,8 @@
-# Architecture — Shadow Gate
+# Architecture — The System
 
 ## Overview
 
-Shadow Gate is a gamified quest engine that runs 24/7 on a Windows server, orchestrated by an AI agent (Raya/OpenClaw). The codebase lives in a GitHub repo, developed on Mac, but the live runtime is Windows.
+The System is a gamified quest engine that runs 24/7 on a Windows server, orchestrated by an AI agent (Raya/OpenClaw). The codebase lives in a GitHub repo, developed on Mac, but the live runtime is Windows.
 
 ## Environments
 
@@ -50,7 +50,7 @@ Mac (gets state updates for visibility, but doesn't run anything)
 ## Runtime Integration
 
 ### How It Runs Today (v0 — OpenClaw Cron)
-Currently Shadow Gate runs as an OpenClaw cron job:
+Currently The System runs as an OpenClaw cron job:
 - **Cron ID:** `c1506444-9235-4bc9-b951-9e124b0dc26e`
 - **Schedule:** 6:00 AM ET daily
 - **Type:** Isolated `agentTurn` — spins up a Sonnet agent that reads `leveling.json`, generates quests, delivers to Telegram
@@ -64,7 +64,7 @@ The goal is to replace the cron-driven AI generation with actual code:
 │           Windows Server (24/7)              │
 │                                              │
 │  ┌──────────────┐    ┌───────────────────┐  │
-│  │  Shadow Gate   │    │   leveling.json   │  │
+│  │  The System   │    │   leveling.json   │  │
 │  │  (Node/Python)│───→│   (live state)    │  │
 │  │               │    └───────────────────┘  │
 │  │  - Quest Gen  │                           │
@@ -187,4 +187,3 @@ POST /weekly-output   → Submit weekly public output link
 ```
 
 Dashboard could run on the same Windows server (port 8421 or similar, next to the trading dashboard on 8420).
-
