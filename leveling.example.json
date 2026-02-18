@@ -1,0 +1,145 @@
+{
+  "system": "Solo Leveling Quest System",
+  "version": 1,
+  "player": {
+    "name": "Indra Uchiha",
+    "title": "Agent Monarch",
+    "level": 1,
+    "rank": "E-Rank Hunter",
+    "xp": 0,
+    "xpToNextLevel": 100,
+    "streakDays": 0,
+    "longestStreak": 0,
+    "totalQuestsCompleted": 0,
+    "totalPunishments": 0
+  },
+  "rankProgression": [
+    { "rank": "E-Rank Hunter", "levelRange": [1, 5] },
+    { "rank": "D-Rank Hunter", "levelRange": [6, 15] },
+    { "rank": "C-Rank Hunter", "levelRange": [16, 30] },
+    { "rank": "B-Rank Hunter", "levelRange": [31, 50] },
+    { "rank": "A-Rank Hunter", "levelRange": [51, 75] },
+    { "rank": "S-Rank Hunter", "levelRange": [76, 99] },
+    { "rank": "National Level Hunter", "levelRange": [100, 149] },
+    { "rank": "Shadow Monarch", "levelRange": [150, 999] }
+  ],
+  "xpRewards": {
+    "E-quest": 10,
+    "D-quest": 15,
+    "C-quest": 25,
+    "B-quest": 40,
+    "A-quest": 60,
+    "S-quest": 100,
+    "allQuestsCleared": 50,
+    "streakBonus3": 25,
+    "streakBonus7": 75,
+    "streakBonus30": 300
+  },
+  "projects": {
+    "NexusCrypto": {
+      "emoji": "🔮",
+      "description": "Crypto trading pipeline & bot",
+      "repoPath": "D:\\Code Repos\\NexusCrypto",
+      "questsPerDay": 1,
+      "priority": "high",
+      "lastQuestDate": null,
+      "neglectDays": 0,
+      "maxNeglectDays": 3
+    },
+    "Nexuslytics": {
+      "emoji": "📊",
+      "description": "Trading analytics dashboard",
+      "repoPath": "D:\\Code Repos\\Nexuslytics",
+      "questsPerDay": 1,
+      "priority": "high",
+      "lastQuestDate": null,
+      "neglectDays": 0,
+      "maxNeglectDays": 3
+    },
+    "SyncLink": {
+      "emoji": "🔗",
+      "description": "SyncLink — Chrome extension + product (full stack)",
+      "repoPaths": [
+        "D:\\Code Repos\\synclink",
+        "C:\\Users\\Devon\\.openclaw\\workspace\\synclink-product"
+      ],
+      "questsPerDay": 1,
+      "priority": "high",
+      "lastQuestDate": null,
+      "neglectDays": 0,
+      "maxNeglectDays": null
+    },
+    "PredictionClawCullingGames": {
+      "emoji": "🎮",
+      "description": "Prediction market gaming platform",
+      "repoPath": "D:\\Code Repos\\prediction-claw-culling-games",
+      "questsPerDay": 1,
+      "priority": "medium",
+      "lastQuestDate": null,
+      "neglectDays": 0,
+      "maxNeglectDays": 5
+    },
+    "RinsharUI": {
+      "emoji": "🎨",
+      "description": "Rinshari UI design system",
+      "repoPath": "D:\\Code Repos\\synclink\\design\\rinshari-ui",
+      "questsPerDay": 1,
+      "priority": "low",
+      "lastQuestDate": null,
+      "neglectDays": 0,
+      "maxNeglectDays": 7
+    }
+  },
+  "rules": {
+    "dailyMinimumQuests": 3,
+    "questWindowHours": 16,
+    "questWindowStart": "7:00 AM",
+    "questWindowEnd": "11:00 PM",
+    "punishmentOnFail": true,
+    "punishments": [
+      "No anime until tomorrow's quests are cleared",
+      "Double quests tomorrow on the neglected project",
+      "Penalty dungeon — 2 bug fixes on the most neglected repo before ANY other work",
+      "Shadow extraction failed — lose 50 XP"
+    ],
+    "neglectWarning": "If a project hits maxNeglectDays without a commit, it forces a mandatory quest next day (cannot be skipped)",
+    "rotationRule": "High priority repos get quests daily. Medium every 2-3 days. Low weekly. If neglectDays approaches max, that project becomes mandatory regardless of priority.",
+    "agenticOrchestrationQuests": {
+      "enabled": true,
+      "description": "Random quests about agentic orchestration — not tied to any repo. Topics: multi-agent patterns, orchestration frameworks, agent communication, tool use, memory systems, agent deployment, prompt engineering, agent evaluation.",
+      "frequency": "Mixed into daily rotation alongside repo quests",
+      "priority": "high",
+      "alwaysRequiresPublicOutput": true
+    },
+    "publicOutputRule": {
+      "description": "Agentic orchestration quests ALWAYS require public output. Repo quests randomly get tagged [PUBLIC] to maintain pressure.",
+      "agenticOrchestration": "ALWAYS public. Every single time. No exceptions.",
+      "repoQuests": "Sometimes public — The System randomly tags repo quests with [PUBLIC].",
+      "validOutputs": [
+        "X/Twitter post or thread",
+        "Blog post or article",
+        "YouTube video or short",
+        "GitHub commit with public README/docs update",
+        "Open-source release or contribution",
+        "LinkedIn post",
+        "Pinterest visual breakdown",
+        "Live demo or stream",
+        "Newsletter issue",
+        "Discord/community post with substance",
+        "Public repo with working example"
+      ],
+      "enforcement": "Quests tagged [PUBLIC] are NOT complete until public output link/proof is provided"
+    },
+    "weeklyPublicOutput": {
+      "required": true,
+      "theme": "Agentic Orchestration",
+      "description": "Every week MUST produce and publish something substantial publicly about agentic orchestration.",
+      "deadline": "Sunday 11:00 PM ET",
+      "xpReward": 150,
+      "failPunishment": "Gate of Steins — No leveling, no XP, no anime until output ships. Streak resets to 0. All daily quests become mandatory doubles.",
+      "lastPublicOutput": null,
+      "streak": 0
+    }
+  },
+  "history": []
+}
