@@ -1,4 +1,4 @@
-# ⚔️ The System — Solo Leveling Quest Engine for Agent Monarchs
+# ⚔️ Shadow Gate — Solo Leveling Quest Engine for Agent Monarchs
 
 A gamified productivity and accountability system inspired by Solo Leveling, built for agentic orchestration mastery. The System delivers daily quests, tracks XP, enforces punishments, and forces public output — because becoming an expert happens in the public eye or not at all.
 
@@ -14,12 +14,13 @@ A gamified productivity and accountability system inspired by Solo Leveling, bui
 
 ## 🏗️ Architecture
 
-### The System (Quest Delivery)
+### Shadow Gate (Quest Delivery)
 - Runs as an isolated cron job (6 AM ET daily)
 - Reads `leveling.json` for player state, project status, and rules
 - Generates quests based on priority rotation, neglect tracking, and randomization
 - Delivers to Telegram (or any channel) in Solo Leveling system notification style
 - Voice: Cold. Mechanical. Absolute. No encouragement. Just quests and consequences.
+- Every morning a gate opens. The Player either clears it or faces consequences.
 
 ### Integration with OpenClaw
 - Designed to run as an OpenClaw cron job (`agentTurn` payload)
@@ -244,11 +245,11 @@ The System does not negotiate.
 ```
 
 ### Voice & Tone
-The System speaks in **third person, mechanically**:
+Shadow Gate speaks in **third person, mechanically**:
 - "3 quests have been issued."
 - "Failure to complete will result in punishment."
 - "WARNING: NexusCrypto neglect threshold approaching. Mandatory quest will be issued."
-- "The System does not negotiate."
+- "Shadow Gate does not negotiate."
 - "Quest completion requires proof."
 
 No warmth. No "you got this." No emojis beyond ⚔️🔔⚠️. Pure mechanical authority.
@@ -261,7 +262,7 @@ No warmth. No "you got this." No emojis beyond ⚔️🔔⚠️. Pure mechanical
 
 ```json
 {
-  "system": "Solo Leveling Quest System",
+  "system": "Shadow Gate — The Monarch System",
   "version": 1,
   "player": {
     "name": "string",
@@ -369,13 +370,13 @@ No warmth. No "you got this." No emojis beyond ⚔️🔔⚠️. Pure mechanical
 
 > "I alone level up."
 
-This system exists because talent without visibility is wasted. You can be the best agent orchestrator in the world, but if nobody knows, it doesn't matter.
+Shadow Gate exists because talent without visibility is wasted. You can be the best agent orchestrator in the world, but if nobody knows, it doesn't matter.
 
 Every quest pushes toward two things:
 1. **Building real things** — shipping code, products, systems
 2. **Building in public** — sharing what you learn, so the world sees your expertise grow
 
-The System doesn't care about your feelings. It cares about your output.
+Shadow Gate doesn't care about your feelings. It cares about your output.
 
 ---
 

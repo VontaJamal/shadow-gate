@@ -1,8 +1,8 @@
-# Architecture — The System
+# Architecture — Shadow Gate
 
 ## Overview
 
-The System is a gamified quest engine that runs 24/7 on a Windows server, orchestrated by an AI agent (Raya/OpenClaw). The codebase lives in a GitHub repo, developed on Mac, but the live runtime is Windows.
+Shadow Gate is a gamified quest engine that runs 24/7 on a Windows server, orchestrated by an AI agent (Raya/OpenClaw). The codebase lives in a GitHub repo, developed on Mac, but the live runtime is Windows.
 
 ## Environments
 
