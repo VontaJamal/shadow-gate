@@ -34,7 +34,7 @@ A gamified productivity and accountability system inspired by Solo Leveling, bui
 ```json
 {
   "name": "Indra Uchiha",
-  "title": "Agent Monarch",
+  "title": "Agent Sovereign",
   "level": 1,
   "rank": "E-Rank Hunter",
   "xp": 0,
@@ -262,7 +262,7 @@ No warmth. No "you got this." No emojis beyond ⚔️🔔⚠️. Pure mechanical
 
 ```json
 {
-  "system": "Shadowgate — The Monarch System",
+  "system": "Shadowgate",
   "version": 1,
   "player": {
     "name": "string",
@@ -413,5 +413,5 @@ MIT — Build your own System. Level up in public.
 ---
 
 *Inspired by Solo Leveling (나 혼자만 레벨업) by Chugong*
-*Built for the Agent Monarch, Indra Uchiha* 🏰
+*Built for the Agent Sovereign, Indra Uchiha* 🏰
 
