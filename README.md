@@ -415,3 +415,9 @@ MIT — Build your own System. Level up in public.
 *Inspired by Solo Leveling (나 혼자만 레벨업) by Chugong*
 *Built for the Agent Sovereign, Indra Uchiha* 🏰
 
+
+---
+
+## Protected by the [Seven Shadows](https://github.com/VontaJamal/seven-shadow-system)
+
+Part of [Sovereign](https://github.com/VontaJamal) — The Shadow Dominion.
