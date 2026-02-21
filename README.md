@@ -1,10 +1,10 @@
-# ⚔️ Shadowgate — Solo Leveling Quest Engine
+# ⚔️ Shadowgate - Solo Leveling Quest Engine
 
-A gamified productivity and accountability system inspired by Solo Leveling, built for agentic orchestration mastery. Shadowgate delivers daily quests, tracks XP, enforces punishments, and forces public output — because becoming an expert happens in the public eye or not at all.
+A gamified productivity and accountability system inspired by Solo Leveling, built for agentic orchestration mastery. Shadowgate delivers daily quests, tracks XP, enforces punishments, and forces public output - because becoming an expert happens in the public eye or not at all.
 
 ## 🎯 What It Does
 
-- Delivers **daily quests** at 6 AM ET — cold, mechanical, unavoidable
+- Delivers **daily quests** at 6 AM ET - cold, mechanical, unavoidable
 - Tracks **XP, levels, ranks, and streaks** across projects
 - Enforces **neglect penalties** when projects go untouched
 - Forces **public output** on all agentic orchestration work
@@ -50,13 +50,13 @@ A gamified productivity and accountability system inspired by Solo Leveling, bui
 
 | Rank | Level Range | Unlock |
 |------|------------|--------|
-| E-Rank Hunter | 1–5 | Starting rank |
-| D-Rank Hunter | 6–15 | Proving grounds |
-| C-Rank Hunter | 16–30 | Consistent builder |
-| B-Rank Hunter | 31–50 | Recognized contributor |
-| A-Rank Hunter | 51–75 | Public authority |
-| S-Rank Hunter | 76–99 | Industry expert |
-| National Level Hunter | 100–149 | Thought leader |
+| E-Rank Hunter | 1-5 | Starting rank |
+| D-Rank Hunter | 6-15 | Proving grounds |
+| C-Rank Hunter | 16-30 | Consistent builder |
+| B-Rank Hunter | 31-50 | Recognized contributor |
+| A-Rank Hunter | 51-75 | Public authority |
+| S-Rank Hunter | 76-99 | Industry expert |
+| National Level Hunter | 100-149 | Thought leader |
 | Shadow Monarch | 150+ | The pinnacle |
 
 ## ⚡ XP Rewards
@@ -118,7 +118,7 @@ Each project is tracked with priority levels and neglect windows.
 
 ### Priority Rotation
 - **High priority** → quests daily
-- **Medium priority** → every 2–3 days
+- **Medium priority** → every 2-3 days
 - **Low priority** → weekly
 - If `neglectDays` approaches `maxNeglectDays`, that project becomes **mandatory** regardless of priority
 
@@ -126,7 +126,7 @@ Each project is tracked with priority levels and neglect windows.
 
 ## 🤖 Agentic Orchestration Quests
 
-These are the core of the system. Random quests about agentic orchestration — not tied to any specific repo.
+These are the core of the system. Random quests about agentic orchestration - not tied to any specific repo.
 
 **Topics include:**
 - Multi-agent communication patterns
@@ -152,7 +152,7 @@ Every quest is `[PUBLIC]` because every quest is based on work you already did. 
 
 You already did the hard part. Shadowgate just tells you to stop being humble about it.
 
-This means there's no "extra work" for public output — the code is shipped, the features are built. The quest is just the visibility layer on top of reality.
+This means there's no "extra work" for public output - the code is shipped, the features are built. The quest is just the visibility layer on top of reality.
 
 ### Valid Public Outputs
 - X/Twitter post or thread
@@ -193,8 +193,8 @@ Quests tagged `[PUBLIC]` are **NOT marked complete** until a link or proof of th
 ### Daily Quest Failures
 1. **No anime** until tomorrow's quests are cleared
 2. **Double quests** tomorrow on the neglected project
-3. **Penalty dungeon** — 2 bug fixes on the most neglected repo before ANY other work
-4. **Shadow extraction failed** — lose 50 XP
+3. **Penalty dungeon** - 2 bug fixes on the most neglected repo before ANY other work
+4. **Shadow extraction failed** - lose 50 XP
 
 ### Neglect Penalties
 If a project hits `maxNeglectDays` without a quest completion, it forces a **mandatory quest** the next day. Cannot be skipped.
@@ -321,7 +321,7 @@ No warmth. No "you got this." No emojis beyond ⚔️🔔⚠️. Pure mechanical
     },
     "publicOutputRule": {
       "agenticOrchestration": "ALWAYS public",
-      "repoQuests": "Sometimes — randomly tagged [PUBLIC]",
+      "repoQuests": "Sometimes - randomly tagged [PUBLIC]",
       "validOutputs": ["string"],
       "enforcement": "string"
     },
@@ -353,15 +353,15 @@ No warmth. No "you got this." No emojis beyond ⚔️🔔⚠️. Pure mechanical
 
 ## 🚀 Future Enhancements
 
-- **Quest verification via git hooks** — auto-detect commits and mark quests complete
-- **Public output scraper** — monitor X/LinkedIn/GitHub for posts and auto-verify
-- **Leaderboard** — if multiple players use the system
-- **Boss raids** — weekly S-rank challenges that require multiple quests chained
-- **Shadow Army** — sub-agents that auto-complete E-rank quests (delegated work still counts)
-- **Dungeon events** — random high-XP challenges that appear mid-day
-- **Achievement system** — badges for milestones (first S-rank quest, 30-day streak, etc.)
-- **API** — REST endpoints for quest management, completion, and stats
-- **Discord/Telegram bot** — interactive quest completion with button confirmations
+- **Quest verification via git hooks** - auto-detect commits and mark quests complete
+- **Public output scraper** - monitor X/LinkedIn/GitHub for posts and auto-verify
+- **Leaderboard** - if multiple players use the system
+- **Boss raids** - weekly S-rank challenges that require multiple quests chained
+- **Shadow Army** - sub-agents that auto-complete E-rank quests (delegated work still counts)
+- **Dungeon events** - random high-XP challenges that appear mid-day
+- **Achievement system** - badges for milestones (first S-rank quest, 30-day streak, etc.)
+- **API** - REST endpoints for quest management, completion, and stats
+- **Discord/Telegram bot** - interactive quest completion with button confirmations
 
 ---
 
@@ -370,25 +370,25 @@ No warmth. No "you got this." No emojis beyond ⚔️🔔⚠️. Pure mechanical
 A visual dashboard to track progression over time. This is a real build requirement, not a nice-to-have.
 
 ### Core Views
-- **Level & Rank progression** — visual timeline showing rank-ups over weeks/months
-- **XP graph** — daily/weekly XP earned over time, cumulative and per-session
-- **Streak calendar** — GitHub-contribution-style heatmap of active days
-- **Quest completion rate** — % of quests cleared per day/week, trends over time
-- **Project health** — per-project neglect tracking, which repos are getting love vs. neglected
-- **Public output log** — timeline of all [PUBLIC] outputs with links
-- **Punishment history** — when they happened and why (accountability)
+- **Level & Rank progression** - visual timeline showing rank-ups over weeks/months
+- **XP graph** - daily/weekly XP earned over time, cumulative and per-session
+- **Streak calendar** - GitHub-contribution-style heatmap of active days
+- **Quest completion rate** - % of quests cleared per day/week, trends over time
+- **Project health** - per-project neglect tracking, which repos are getting love vs. neglected
+- **Public output log** - timeline of all [PUBLIC] outputs with links
+- **Punishment history** - when they happened and why (accountability)
 
 ### Advanced Views
-- **Per-project XP breakdown** — which projects generate the most XP
-- **Quest difficulty distribution** — are you doing mostly E-rank or pushing into A/S?
-- **Weekly/monthly reports** — auto-generated summaries of progress
-- **Milestone tracker** — next rank, next streak bonus, weekly output deadline countdown
+- **Per-project XP breakdown** - which projects generate the most XP
+- **Quest difficulty distribution** - are you doing mostly E-rank or pushing into A/S?
+- **Weekly/monthly reports** - auto-generated summaries of progress
+- **Milestone tracker** - next rank, next streak bonus, weekly output deadline countdown
 
 ### Tech
 - Web dashboard (Next.js or standalone)
 - Reads from `leveling.json` history array
 - Could be hosted alongside the quest engine or as a separate app
-- Mobile-friendly — check your stats from your phone
+- Mobile-friendly - check your stats from your phone
 
 ---
 
@@ -399,8 +399,8 @@ A visual dashboard to track progression over time. This is a real build requirem
 Shadowgate exists because talent without visibility is wasted. You can be the best agent orchestrator in the world, but if nobody knows, it doesn't matter.
 
 Every quest pushes toward two things:
-1. **Building real things** — shipping code, products, systems
-2. **Building in public** — sharing what you learn, so the world sees your expertise grow
+1. **Building real things** - shipping code, products, systems
+2. **Building in public** - sharing what you learn, so the world sees your expertise grow
 
 Shadowgate doesn't care about your feelings. It cares about your output.
 
@@ -408,7 +408,7 @@ Shadowgate doesn't care about your feelings. It cares about your output.
 
 ## 📜 License
 
-MIT — Build your own System. Level up in public.
+MIT - Build your own System. Level up in public.
 
 ---
 
@@ -419,5 +419,7 @@ MIT — Build your own System. Level up in public.
 ---
 
 ## Protected by the [Seven Shadows](https://github.com/VontaJamal/seven-shadow-system)
+
+[Explore the Vault →](https://github.com/VontaJamal/shadow-vault)
 
 Part of [Sovereign](https://github.com/VontaJamal) — The Shadow Dominion.
