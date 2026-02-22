@@ -11,13 +11,13 @@
 - Open PR count at start: 0
 - Default branch: main
 - Latest default-branch run (at start):
-  - None detected on default branch
+  - Public Logic CI: https://github.com/VontaJamal/shadow-gate/actions/runs/22283462176
 
 ## Public Surface Inventory
 - README and architecture docs
 - Seven Shadow policy and governance wiring
 - Governance submodule build path
-- Public workflow coverage for existing governance logic
+- Public workflow coverage for governance logic
 
 ## Command Matrix
 | Check | Result | Notes |
@@ -26,15 +26,17 @@
 | `leveling.example.json` parse | PASS | Valid JSON |
 | `npm --prefix governance/seven-shadow-system ci` | PASS | Governance dependency install succeeded |
 | `npm --prefix governance/seven-shadow-system run build` | PASS | Governance build succeeded |
-| README/architecture link integrity | PASS | Relative links in public docs resolve |
+| README/architecture relative link integrity | PASS | Relative links resolve |
+| `rinshari-ui` deep sweep (repo-wide) | PASS | No remaining matches after submodule bump |
 
 ## Findings Register
 | Severity | Area | Repro | Status | Fix |
 |---|---|---|---|---|
-| P1 | CI coverage gap | No default-branch `push`/`pull_request` workflow validated public governance logic | Fixed | Added `Public Logic CI` workflow on `main` push/PR |
+| P1 | Governance dependency drift | Submodule pinned at `a4d4331` retained outdated downstream doctrine references | Fixed | Bumped `governance/seven-shadow-system` to `a0c1f61` from upstream main |
 
 ## Residual Risks / Follow-ups
-- Continue monitoring governance submodule and policy bundle mode behavior in future waves.
+- Keep monitoring seven-shadow-system release notes before future pointer bumps.
 
 ## Attestation
 - This wave is maintenance and hardening only.
+- No net-new product features were introduced.
