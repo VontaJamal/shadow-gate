@@ -1,0 +1,68 @@
+name: Public Logic CI
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate-public-logic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: governance/seven-shadow-system/package-lock.json
+
+      - name: Validate policy JSON
+        run: python3 -m json.tool .seven-shadow/policy.json >/dev/null
+
+      - name: Validate leveling JSON
+        run: python3 -m json.tool leveling.example.json >/dev/null
+
+      - name: Validate public document links
+        run: |
+          python3 - <<'PY'
+          import pathlib
+          import re
+          import sys
+
+          files = [pathlib.Path("README.md"), pathlib.Path("ARCHITECTURE.md")]
+          missing = []
+
+          for file_path in files:
+            text = file_path.read_text(encoding="utf-8")
+            for match in re.finditer(r"\[[^\]]+\]\(([^)]+)\)", text):
+              target = match.group(1).split("#", 1)[0].strip()
+              if not target or target.startswith(("http://", "https://", "mailto:")):
+                continue
+              if not (file_path.parent / target).exists():
+                missing.append((str(file_path), target))
+
+          if missing:
+            for file_path, target in missing:
+              print(f"Missing relative link target in {file_path}: {target}")
+            sys.exit(1)
+          PY
+
+      - name: Install governance dependencies
+        run: npm ci
+        working-directory: governance/seven-shadow-system
+
+      - name: Build governance package
+        run: npm run build
+        working-directory: governance/seven-shadow-system
